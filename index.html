@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Secret Pleasure 🔥</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .sexy-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: red;
+            animation: blink 1s infinite alternate;
+        }
+        @keyframes blink {
+            from { opacity: 1; }
+            to { opacity: 0.5; }
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            background: red;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="typingText"></h1>
+    <p class="sexy-text">Are you ready for something HOT? 🔥</p>
+    
+    <button id="playButton">Click to Unlock 🔞</button>
+
+    <audio id="moanSound">
+        <source src="https://voca.ro/1oWUOONLXwML" type="audio/mpeg">
+    </audio>
+
+    <script>
+        // Hiệu ứng text chạy từng chữ
+        let text = "Welcome to your private pleasure zone... 😈";
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typingText").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        typeWriter();
+
+        // Xử lý âm thanh và chuyển hướng
+        document.getElementById("playButton").addEventListener("click", function() {
+            let audio = document.getElementById("moanSound");
+            audio.play();
+            
+            // Chờ âm thanh kết thúc rồi mới chuyển link
+            audio.onended = function() {
+                window.location.href = "https://en.shrinke.me/Vid-SEXXX-key-61hkg";
+            };
+        });
+    </script>
+
+</body>
+</html>
